@@ -1,0 +1,204 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Theaters
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <!-- <ion-list>
+        <ion-item-sliding>
+          <ion-item>
+            <ion-label>Item</ion-label>
+          </ion-item>
+          <ion-item-options side="start">
+            <ion-item-option (click)="favorite(item)">Favorite</ion-item-option>
+            <ion-item-option color="danger" (click)="share(item)">Share</ion-item-option>
+          </ion-item-options>
+      
+          <ion-item-options side="end">
+            <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>  -->
+      <ion-card>
+      <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+            <img src="assets/icon/b4.jpg">
+          </ion-slide>
+          <ion-slide>
+              <img src="assets/icon/b5.jpg">
+          </ion-slide>
+          <ion-slide>
+              <img src="assets/icon/b6.jpg">
+          </ion-slide>
+        </ion-slides>
+      </ion-card>
+
+
+      <!-- <ion-row>
+        
+           <ion-segment>
+               <ion-segment-button>
+                 <ion-label>  Default Sort</ion-label>
+               </ion-segment-button>
+               <ion-segment-button>
+                 <ion-label>  Amenities</ion-label>
+               </ion-segment-button >
+               <ion-segment-button>
+                 <ion-label>Experience</ion-label>
+               </ion-segment-button>
+             </ion-segment>  
+       </ion-row>  -->
+
+
+       <ion-row>
+                  
+          <!-- Scrollable Segment -->
+            <ion-segment scrollable >
+              <ion-segment-button>
+                <ion-icon name="home"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button checked>
+                <ion-icon name="heart"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-icon name="pin"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-icon name="star"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-icon name="call"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-icon name="globe"></ion-icon>
+              </ion-segment-button>
+              <ion-segment-button>
+                <ion-icon name="basket"></ion-icon>
+              </ion-segment-button>
+            </ion-segment>
+  
+       </ion-row>
+
+       <ion-row>
+          <ion-slides pager="true" [options]="slideOpts">
+            <br> <br> <br>
+              <ion-slide>
+                <img src="https://img.ticketnew.com/tn/movie/19632/7.jpg?6454782&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+              </ion-slide>
+              <ion-slide>
+                <img src="https://img.ticketnew.com/tn/movie/19742/7.jpg?139166&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+              </ion-slide>
+              <ion-slide>
+                 <img src="https://img.ticketnew.com/tn/movie/19605/7.jpg?v63686108320463&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+              </ion-slide>
+              <ion-slide>
+                  <img src="https://img.ticketnew.com/tn/movie/19632/7.jpg?6454782&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+                </ion-slide>
+                <ion-slide>
+                  <img src="https://img.ticketnew.com/tn/movie/19742/7.jpg?139166&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+                </ion-slide>
+                <ion-slide>
+                   <img src="https://img.ticketnew.com/tn/movie/19605/7.jpg?v63686108320463&x-oss-process=image/resize,m_mfit,w_330,h_400/quality,q_80"/>
+                </ion-slide>
+                <br> <br> <br>
+          </ion-slides>
+       </ion-row>
+
+    <ion-card>
+    <ion-item (click)="testClick()">
+      <ion-avatar slot="start">
+          <ion-icon name="star-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+          <h2>Santosh Theatre - Gandhinagar </h2>
+          <p>K.G.Road, Majestic Circle, Next To Alankar Plaza</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item (click)="testClick()">
+        <ion-avatar slot="start">
+            <ion-icon name="star-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+            <h2>Pushpanjali A/C Theatre - B.N.Pura </h2>
+            <p>Pushpanjali A/C Theatre : B.N.Pura, B.Narayanapura, Dooravani Nagar Road, Opp</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+        <ion-item (click)="testClick()">
+          <ion-avatar slot="start">
+              <ion-icon name="star-outline"></ion-icon>
+          </ion-avatar>
+          <ion-label>
+              <h2>Santosh Theatre - Gandhinagar </h2>
+              <p>K.G.Road, Majestic Circle, Next To Alankar Plaza</p>
+          </ion-label>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item (click)="testClick()">
+            <ion-avatar slot="start">
+                <ion-icon name="star-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label>
+                <h2>Pushpanjali A/C Theatre - B.N.Pura </h2>
+                <p>Pushpanjali A/C Theatre : B.N.Pura, B.Narayanapura, Dooravani Nagar Road, Opp</p>
+            </ion-label>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+            <ion-item (click)="testClick()">
+              <ion-avatar slot="start">
+                  <ion-icon name="star-outline"></ion-icon>
+              </ion-avatar>
+              <ion-label>
+                  <h2>Santosh Theatre - Gandhinagar </h2>
+                  <p>K.G.Road, Majestic Circle, Next To Alankar Plaza</p>
+              </ion-label>
+            </ion-item>
+          </ion-card>
+          <ion-card>
+            <ion-item (click)="testClick()">
+                <ion-avatar slot="start">
+                    <ion-icon name="star-outline"></ion-icon>
+                </ion-avatar>
+                <ion-label>
+                    <h2>Pushpanjali A/C Theatre - B.N.Pura </h2>
+                    <p>Pushpanjali A/C Theatre : B.N.Pura, B.Narayanapura, Dooravani Nagar Road, Opp</p>
+                </ion-label>
+              </ion-item>
+            </ion-card> 
+                 
+     
+    
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/1.jpg">
+      </ion-thumbnail>
+      <ion-label>
+        <h1>H2 Title Text</h1>
+        <p>Button on right</p>
+      </ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item>
+    
+    <ion-item (click)="testClick()"> 
+      <ion-label>
+        <h3>H3 Title Text</h3>
+        <p>Icon on right</p>
+      </ion-label>
+      <ion-icon name="close-circle" slot="end"></ion-icon>
+    </ion-item> 
+
+
+
+
+
+</ion-content>
